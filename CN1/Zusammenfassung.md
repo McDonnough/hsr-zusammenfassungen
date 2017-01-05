@@ -2067,9 +2067,9 @@ Acknowledgements: Sequence Number des Gegenübers bestätigen
 
 Wie man sieht, acknowledget der Server x+1 und der Client antwortet sogleich mit SN x+1.
 
-* Die Receice Window Size gibt an, wieviel der Empfänger (Sender dieser Option) maximal unbestätigt empfangen will. Wird manchmal auch nur Window Size genannt. Die Window Size gibt auch an, wie gross der Receive Buffer noch ist
-* Die Maximum Segment Size (MSS) gibt an, wieviel Daten der Empfänger empfangen will. Gibt implizit an, wieviel Daten der Sender dieser Information in ein IP-Paket auf seiner Seite packen kann, ohne Fragmentierung auf dem Network Layer. Kann auch das Resultat eines MTU Path Discovery sein
-* Die Sequence Number gibt die (virtuelle) Byte Stream-Nummer des ersten Bytes dieses Segments an.
+* Die *Receice Window Size* gibt an, wieviel der Empfänger (Sender dieser Option) maximal unbestätigt empfangen will. Wird manchmal auch nur Window Size genannt. Die Window Size gibt auch an, wie gross der Receive Buffer noch ist. Es wird auch noch die *Initial Sequence Number (ISN)* mitgegeben.
+* Die *Maximum Segment Size (MSS)* gibt an, wieviel Daten der Empfänger empfangen will. Gibt implizit an, wieviel Daten der Sender dieser Information in ein IP-Paket auf seiner Seite packen kann, ohne Fragmentierung auf dem Network Layer. Kann auch das Resultat eines MTU Path Discovery sein.
+* Die *Sequence Number (SN)* gibt die (virtuelle) Byte Stream-Nummer des ersten Bytes dieses Segments an.
 
 ### State Diagram Verbindungsaufbau
 
